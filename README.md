@@ -13,18 +13,41 @@ Crea un personaje único para tu próxima aventura en Tamriel combinando razas, 
 - Retratos correspondientes a cada combinación de raza y sexo.
 - Posibilidad de volver a generar el personaje individualmente.
 
-### ⚔️ Character Traits
+### ⚔️ Rasgos
 - Más de 100 rasgos disponibles.
 - Selección de 3 rasgos aleatorios sin repetir.
 - Cada rasgo incluye su nombre original, traducción y descripción.
 - Posibilidad de volver a aleatorizar los rasgos.
 
-### 📜 Origin Stories
+### 📜 Historia de Origen
 - 40 historias de origen diferentes.
 - Títulos originales y traducciones al español.
 - Descripciones que proponen objetivos, motivaciones y aventuras.
 - Imágenes asociadas a cada historia.
 - Posibilidad de descubrir una nueva historia en cualquier momento.
+
+### 🏠 Lugar de inicio
+
+Determina dónde comienza tu aventura en Skyrim. El randomizador incluye **46 posibles opciones de inicio**, organizadas en 11 escenarios inspirados en el mod Alternate Perspective.
+
+Escenarios disponibles:
+
+- **Cliente habitual de una posada:** 17 posadas y tabernas de Skyrim y Solstheim.
+- **Procedente del extranjero:** 4 posibles lugares de llegada en barco.
+- **Náufrago:** Comienza como único superviviente de un naufragio.
+- **Vampiro:** 4 posibles guaridas de clanes vampíricos.
+- **Hombre lobo:** Comienza como un hombre lobo al servicio de Hircine.
+- **Renegado:** Comienza como miembro de los Renegados en el Reducto de Druadach.
+- **Gremios:** 4 posibles afiliaciones a gremios de Skyrim.
+- **Sangre de Dragón:** 4 opciones de inicio relacionadas con la historia del Sangre de Dragón.
+- **Criminal buscado:** Comienza como un fugitivo perseguido por las autoridades.
+- **Abandonado a tu suerte:** Comienza herido y abandonado en plena naturaleza.
+- **Mi propio hogar:** 8 posibles ubicaciones para tener una propiedad en Skyrim.
+
+Las 46 opciones tienen exactamente la misma probabilidad de aparecer. Los escenarios que contienen varias ubicaciones comparten una misma imagen, mientras que los escenarios individuales cuentan con una ilustración propia.
+
+El apartado Lugar de inicio dispone de su propio botón para generar una nueva ubicación y también está integrado en el generador de builds completas.
+
 
 ### 🎲 Generación completa
 Con un solo botón puedes generar una build completa que combina:
