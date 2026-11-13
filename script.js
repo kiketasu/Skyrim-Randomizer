@@ -1149,31 +1149,21 @@ const startingScenarios = [
     }
 ];
 
-const startingOptions = startingScenarios.flatMap(scenario => {
-    if (scenario.locations.length === 0) {
-        return [{
-            scenario: scenario.name,
-            description: scenario.description,
-            image: scenario.image,
-            location: null
-        }];
-    }
-
-    return scenario.locations.map(location => ({
-        scenario: scenario.name,
-        description: scenario.description,
-        image: scenario.image,
-        location
-    }));
-});
-
 function randomizeStartingLocation() {
-    const selected = startingOptions[
-        Math.floor(Math.random() * startingOptions.length)
+    // Primera tirada: todos los escenarios tienen la misma probabilidad.
+    const selectedScenario = startingScenarios[
+        Math.floor(Math.random() * startingScenarios.length)
     ];
 
-    document.getElementById("starting-scenario").textContent = selected.scenario;
-    document.getElementById("starting-description").textContent = selected.description;
+    // Segunda tirada: si el escenario tiene varias ubicaciones, elegimos una.
+    const selectedLocation = selectedScenario.locations.length > 0
+        ? selectedScenario.locations[
+            Math.floor(Math.random() * selectedScenario.locations.length)
+        ]
+        : null;
+
+    document.getElementById("starting-scenario").textContent = selectedScenario.name;
+    document.getElementById("starting-description").textContent = selectedScenario.description;
 
     const startingImage = document.getElementById("starting-image");
     const imagePlaceholder = document.getElementById("starting-image-placeholder");
@@ -1186,16 +1176,16 @@ function randomizeStartingLocation() {
     startingImage.onerror = () => {
         startingImage.classList.remove("visible");
         imagePlaceholder.style.display = "flex";
-        console.error("No se ha encontrado la imagen del escenario:", selected.image);
+        console.error("No se ha encontrado la imagen del escenario:", selectedScenario.image);
     };
-    startingImage.src = selected.image;
-    startingImage.alt = `Escenario: ${selected.scenario}`;
+    startingImage.src = selectedScenario.image;
+    startingImage.alt = `Escenario: ${selectedScenario.name}`;
 
     const locationWrap = document.getElementById("starting-location-wrap");
     const locationName = document.getElementById("starting-location");
 
-    if (selected.location) {
-        locationName.textContent = selected.location;
+    if (selectedLocation) {
+        locationName.textContent = selectedLocation;
         locationWrap.classList.add("visible");
     } else {
         locationName.textContent = "";

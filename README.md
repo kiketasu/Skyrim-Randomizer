@@ -13,24 +13,30 @@ Crea un personaje único para tu próxima aventura en Tamriel combinando razas, 
 - Retratos correspondientes a cada combinación de raza y sexo.
 - Posibilidad de volver a generar el personaje individualmente.
 
-### ⚔️ Character Traits
+### ⚔️ Rasgos
 - Más de 100 rasgos disponibles.
 - Selección de 3 rasgos aleatorios sin repetir.
 - Cada rasgo incluye su nombre original, traducción y descripción.
 - Posibilidad de volver a aleatorizar los rasgos.
 
-### 📜 Origin Stories
+### 📜 Historia de Origen
 - 40 historias de origen diferentes.
 - Títulos originales y traducciones al español.
 - Descripciones que proponen objetivos, motivaciones y aventuras.
 - Imágenes asociadas a cada historia.
 - Posibilidad de descubrir una nueva historia en cualquier momento.
 
+### 🧭 Lugar de Inicio
+- 11 escenarios de inicio inspirados en el mod Alternate Perspective.
+- Cada escenario tiene la misma probabilidad de aparecer.
+- Si un escenario incluye varias ubicaciones, se elige una al azar dentro de ese escenario.
+- Los escenarios sin ubicaciones adicionales aparecen directamente.
+
 ### 🎲 Generación completa
 Con un solo botón puedes generar una build completa que combina:
 - Raza y sexo.
 - Tres rasgos aleatorios.
-- Una historia de origen.
+- Una historia de origen.\n- Un escenario de inicio y, cuando corresponda, una ubicación aleatoria.
 
 ¡Tu próxima aventura nunca será igual!
 
