@@ -825,3 +825,104 @@ footer {
         font-size: 17px;
     }
 }
+
+
+/* =================================
+   AJUSTES FINALES · ENCABEZADOS 04 Y 05
+================================= */
+
+.origin-location-grid .section-heading {
+    display: none;
+}
+
+.origin-location-grid .origin-card,
+.origin-location-grid .starting-card {
+    padding: 22px;
+}
+
+.origin-location-grid .origin-card > .card-header,
+.origin-location-grid .starting-card > .card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #494737;
+    padding-bottom: 14px;
+    margin: 0 0 18px;
+}
+
+.origin-location-grid .origin-card > .card-header h3,
+.origin-location-grid .starting-card > .card-header h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #dfc895;
+}
+
+.origin-location-grid .origin-card > .card-header .number,
+.origin-location-grid .starting-card > .card-header .number {
+    color: #a98c50;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+}
+
+.origin-location-grid .origin-image-container,
+.origin-location-grid .starting-emblem {
+    min-height: 300px;
+}
+
+.origin-location-grid .origin-info,
+.origin-location-grid .starting-info {
+    padding: 22px 8px;
+}
+
+.origin-location-grid .starting-label {
+    margin-bottom: 8px;
+}
+
+
+/* Imagen dinámica del escenario de inicio */
+.starting-image-container {
+    min-height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: radial-gradient(circle, #414537 0%, #252b24 45%, #131713 100%);
+    border: 1px solid #454a3d;
+    border-radius: 5px;
+}
+
+.starting-image-container img {
+    display: none;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.starting-image-container img.visible {
+    display: block;
+}
+
+.starting-image-container span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b99b60;
+    font-family: 'Cinzel', serif;
+    font-size: 110px;
+    text-shadow: 0 0 30px #b99b6044;
+}
+
+@media (max-width: 760px) {
+    .starting-image-container,
+    .starting-image-container img {
+        min-height: 220px;
+        height: 220px;
+    }
+
+    .starting-image-container span {
+        font-size: 85px;
+    }
+}

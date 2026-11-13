@@ -1035,103 +1035,114 @@ backToTopButton.addEventListener("click", () => {
 
 const startingScenarios = [
     {
-        name: "Regular (Inn)",
-        description: "You're a Regular at an Inn somewhere in Skyrim or Solstheim.",
+        name: "Cliente habitual de una posada",
+        image: "images/posada.jpg",
+        description: "Eres cliente habitual de una posada de Skyrim o Solstheim.",
         locations: [
-            "The Bannered Mare",
-            "The Bee and Barb",
-            "The Winking Skeever",
-            "Silver-Blood Inn",
-            "Candlehearth Hall",
-            "Dead Man's Drink",
-            "Moorside Inn",
-            "The Frozen Hearth",
-            "Windpeak Inn",
-            "The Retching Netch",
-            "The Sleeping Giant Inn",
-            "Frostfruit Inn",
-            "Vilemyr Inn",
-            "Old Hroldan Inn",
-            "Four Shields Tavern",
-            "Nightgate Inn",
-            "Braidwood Inn"
+            "La yegua abanderada",
+            "La abeja y el dardo",
+            "El skeever travieso",
+            "Posada de Sangre Argéntea",
+            "Salón El calor de la vela",
+            "El trago del finado",
+            "Posada El brezal",
+            "El hogar helado",
+            "El pico ventoso",
+            "El Netch rezumante",
+            "El gigante dormido",
+            "Posada La fruta gélida",
+            "Posada de Vilemyr",
+            "Viejo Hroldan",
+            "Taberna Los cuatro escudos",
+            "Posada El portal nocturno",
+            "Posada del Bosque Trenzado"
         ]
     },
     {
-        name: "From Overseas",
-        description: "You arrived in Skyrim by ship.",
+        name: "Procedente del extranjero",
+        image: "images/extranjero.jpg",
+        description: "Has llegado a Skyrim en barco.",
         locations: [
-            "East Empire Trading Company",
-            "Windhelm Docks",
-            "Dawnstar's Shore",
-            "Raven Rock Docks"
+            "Compañía del Imperio Oriental",
+            "Muelles de Ventalia",
+            "Costa de Lucero del Alba",
+            "Muelles de Roca del Cuervo"
         ]
     },
     {
-        name: "Shipwrecked",
-        description: "You've been victim of a crash on high seas. As you regain consciousness you are the last survivor, deep underwater. Will you manage to escape?",
+        name: "Náufrago",
+        image: "images/naufrago.jpg",
+        description: "Has sufrido un naufragio en alta mar. Al recuperar la consciencia, descubres que eres el único superviviente y estás bajo el agua. ¿Conseguirás escapar?",
         locations: []
     },
     {
-        name: "Vampire",
-        description: "You're part of a vampire clan.",
+        name: "Vampiro",
+        image: "images/vampiro.jpg",
+        description: "Formas parte de un clan de vampiros.",
         locations: [
-            "Pinemoon Cave",
-            "Bloodlet Throne",
-            "Movarth's Lair",
-            "Haemar's Shame"
+            "Cueva de Pinoalto",
+            "Trono Sangriento",
+            "Guarida de Movarth",
+            "La vergüenza de Haemar"
         ]
     },
     {
-        name: "Werewolf",
-        description: "You are a Werewolf hunting in Hircine's name.",
+        name: "Hombre lobo",
+        image: "images/hombre_lobo.jpg",
+        description: "Eres un hombre lobo que caza en nombre de Hircine.",
         locations: []
     },
     {
-        name: "Forsworn",
-        description: "You are a member of the Forsworn at Druadach Redoubt.",
+        name: "Renegado",
+        image: "images/renegado.jpg",
+        description: "Eres miembro de los Renegados en el Reducto de Druadach.",
         locations: []
     },
     {
-        name: "Guilds",
-        description: "You are a member of one of the Guilds in Skyrim.",
+        name: "Gremios",
+        image: "images/gremio.jpg",
+        description: "Eres miembro de uno de los gremios de Skyrim.",
         locations: [
-            "College of Winterhold",
-            "Thieves Guild",
-            "Dark Brotherhood",
-            "Companions"
+            "Colegio de Hibernalia",
+            "Gremio de Ladrones",
+            "Hermandad Oscura",
+            "Los Compañeros"
         ]
     },
     {
-        name: "Dragonborn",
-        description: "You are the Dragonborn of legend, saving the world from Alduin.",
+        name: "Sangre de Dragón",
+        image: "images/sangre_dragon.jpg",
+        description: "Eres el Sangre de Dragón de la leyenda y debes salvar el mundo de Alduin.",
         locations: [
-            "Vanilla Start",
-            "Helgen Keep (Start)",
-            "Helgen Keep (End)",
-            "High Hrothgar"
+            "Inicio original",
+            "Torreón de Helgen (inicio)",
+            "Torreón de Helgen (final)",
+            "Alto Hrothgar"
         ]
     },
     {
-        name: "Wanted Criminal",
-        description: "You are a criminal with high bounties in multiple holds, taking shelter at a nearby camp.",
+        name: "Criminal buscado",
+        image: "images/criminal.jpg",
+        description: "Eres un criminal con elevadas recompensas por tu captura en varias comarcas y te refugias en un campamento cercano.",
         locations: []
     },
     {
-        name: "Left for Dead",
-        description: "You've been attacked and barely managed to survive. Wounded and taken by disease you try to find a way back to civilization.",
+        name: "Abandonado a tu suerte",
+        image: "images/abandonado.jpg",
+        description: "Has sufrido un ataque y apenas has conseguido sobrevivir. Herido y enfermo, intentas encontrar el camino de vuelta a la civilización.",
         locations: []
     },
     {
-        name: "My Own Home",
-        description: "You own property in one of the major cities.",
+        name: "Mi propio hogar",
+        image: "images/casa.jpg",
+        description: "Tienes una propiedad en una de las principales ciudades o regiones.",
         locations: [
-            "Whiterun",
-            "The Rift",
-            "The Pale",
-            "Winterhold",
-            "The Reach",
-            "Solitude",
+            "Carrera Blanca",
+            "La Grieta",
+            "El Pálido",
+            "Hibernalia",
+            "La Cuenca",
+            "Soledad",
             "Riften",
             "Markarth"
         ]
@@ -1143,6 +1154,7 @@ const startingOptions = startingScenarios.flatMap(scenario => {
         return [{
             scenario: scenario.name,
             description: scenario.description,
+            image: scenario.image,
             location: null
         }];
     }
@@ -1150,6 +1162,7 @@ const startingOptions = startingScenarios.flatMap(scenario => {
     return scenario.locations.map(location => ({
         scenario: scenario.name,
         description: scenario.description,
+        image: scenario.image,
         location
     }));
 });
@@ -1161,6 +1174,22 @@ function randomizeStartingLocation() {
 
     document.getElementById("starting-scenario").textContent = selected.scenario;
     document.getElementById("starting-description").textContent = selected.description;
+
+    const startingImage = document.getElementById("starting-image");
+    const imagePlaceholder = document.getElementById("starting-image-placeholder");
+    startingImage.classList.remove("visible");
+    imagePlaceholder.style.display = "flex";
+    startingImage.onload = () => {
+        startingImage.classList.add("visible");
+        imagePlaceholder.style.display = "none";
+    };
+    startingImage.onerror = () => {
+        startingImage.classList.remove("visible");
+        imagePlaceholder.style.display = "flex";
+        console.error("No se ha encontrado la imagen del escenario:", selected.image);
+    };
+    startingImage.src = selected.image;
+    startingImage.alt = `Escenario: ${selected.scenario}`;
 
     const locationWrap = document.getElementById("starting-location-wrap");
     const locationName = document.getElementById("starting-location");
