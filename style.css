@@ -678,3 +678,150 @@ footer {
         height: 44px;
     }
 }
+
+
+/* =================================
+   04 + 05 · ORIGIN STORY / STARTING LOCATION
+================================= */
+
+.origin-location-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+    margin-top: 48px;
+}
+
+.origin-location-grid .origin-section,
+.origin-location-grid .starting-section {
+    min-width: 0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.origin-location-grid .section-heading {
+    min-height: 82px;
+}
+
+.origin-location-grid .origin-card,
+.starting-card {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.starting-card {
+    padding: 25px;
+    background: linear-gradient(145deg, #292e2a, #1d211e);
+    border: 1px solid #5b533e;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px #0005;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.starting-card:hover {
+    transform: translateY(-4px);
+    border-color: #b99b60;
+}
+
+.starting-emblem {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        radial-gradient(circle, #414537 0%, #252b24 45%, #131713 100%);
+    border: 1px solid #454a3d;
+    border-radius: 5px;
+    color: #b99b60;
+    font-family: 'Cinzel', serif;
+    font-size: 110px;
+    text-shadow: 0 0 30px #b99b6044;
+}
+
+.starting-info {
+    flex: 1;
+    text-align: center;
+    padding: 25px 8px;
+}
+
+.starting-label {
+    display: block;
+    color: #b99b60;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.starting-info h4 {
+    font-family: 'Cinzel', serif;
+    font-size: 25px;
+    line-height: 1.35;
+    color: #e1d1ad;
+    margin-bottom: 14px;
+}
+
+.starting-info p {
+    color: #b0b1a6;
+    font-size: 13px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.starting-location-wrap {
+    display: none;
+    margin-top: 25px;
+    padding: 18px 12px;
+    background: #131713aa;
+    border: 1px solid #655638;
+    border-radius: 5px;
+}
+
+.starting-location-wrap.visible {
+    display: block;
+}
+
+.starting-info h5 {
+    color: #e1d1ad;
+    font-family: 'Cinzel', serif;
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+.starting-card .random-button {
+    width: 100%;
+    margin-top: auto;
+}
+
+@media (max-width: 760px) {
+    .origin-location-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .origin-location-grid .section-heading {
+        min-height: 0;
+    }
+
+    .starting-emblem {
+        min-height: 220px;
+        font-size: 85px;
+    }
+}
+
+@media (max-width: 550px) {
+    .starting-card {
+        padding: 15px;
+    }
+
+    .starting-info h4 {
+        font-size: 21px;
+    }
+
+    .starting-info h5 {
+        font-size: 17px;
+    }
+}

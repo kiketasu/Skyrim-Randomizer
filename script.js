@@ -178,6 +178,7 @@ function generateFullBuild() {
     randomizeCharacter();
     randomizeTraits();
     randomizeOriginStory();
+    randomizeStartingLocation();
 
 }
 
@@ -1025,3 +1026,156 @@ window.addEventListener("scroll", () => {
 backToTopButton.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+
+/* =================================
+   05 · STARTING LOCATION
+   Alt Perspective - 46 opciones
+================================= */
+
+const startingScenarios = [
+    {
+        name: "Regular (Inn)",
+        description: "You're a Regular at an Inn somewhere in Skyrim or Solstheim.",
+        locations: [
+            "The Bannered Mare",
+            "The Bee and Barb",
+            "The Winking Skeever",
+            "Silver-Blood Inn",
+            "Candlehearth Hall",
+            "Dead Man's Drink",
+            "Moorside Inn",
+            "The Frozen Hearth",
+            "Windpeak Inn",
+            "The Retching Netch",
+            "The Sleeping Giant Inn",
+            "Frostfruit Inn",
+            "Vilemyr Inn",
+            "Old Hroldan Inn",
+            "Four Shields Tavern",
+            "Nightgate Inn",
+            "Braidwood Inn"
+        ]
+    },
+    {
+        name: "From Overseas",
+        description: "You arrived in Skyrim by ship.",
+        locations: [
+            "East Empire Trading Company",
+            "Windhelm Docks",
+            "Dawnstar's Shore",
+            "Raven Rock Docks"
+        ]
+    },
+    {
+        name: "Shipwrecked",
+        description: "You've been victim of a crash on high seas. As you regain consciousness you are the last survivor, deep underwater. Will you manage to escape?",
+        locations: []
+    },
+    {
+        name: "Vampire",
+        description: "You're part of a vampire clan.",
+        locations: [
+            "Pinemoon Cave",
+            "Bloodlet Throne",
+            "Movarth's Lair",
+            "Haemar's Shame"
+        ]
+    },
+    {
+        name: "Werewolf",
+        description: "You are a Werewolf hunting in Hircine's name.",
+        locations: []
+    },
+    {
+        name: "Forsworn",
+        description: "You are a member of the Forsworn at Druadach Redoubt.",
+        locations: []
+    },
+    {
+        name: "Guilds",
+        description: "You are a member of one of the Guilds in Skyrim.",
+        locations: [
+            "College of Winterhold",
+            "Thieves Guild",
+            "Dark Brotherhood",
+            "Companions"
+        ]
+    },
+    {
+        name: "Dragonborn",
+        description: "You are the Dragonborn of legend, saving the world from Alduin.",
+        locations: [
+            "Vanilla Start",
+            "Helgen Keep (Start)",
+            "Helgen Keep (End)",
+            "High Hrothgar"
+        ]
+    },
+    {
+        name: "Wanted Criminal",
+        description: "You are a criminal with high bounties in multiple holds, taking shelter at a nearby camp.",
+        locations: []
+    },
+    {
+        name: "Left for Dead",
+        description: "You've been attacked and barely managed to survive. Wounded and taken by disease you try to find a way back to civilization.",
+        locations: []
+    },
+    {
+        name: "My Own Home",
+        description: "You own property in one of the major cities.",
+        locations: [
+            "Whiterun",
+            "The Rift",
+            "The Pale",
+            "Winterhold",
+            "The Reach",
+            "Solitude",
+            "Riften",
+            "Markarth"
+        ]
+    }
+];
+
+const startingOptions = startingScenarios.flatMap(scenario => {
+    if (scenario.locations.length === 0) {
+        return [{
+            scenario: scenario.name,
+            description: scenario.description,
+            location: null
+        }];
+    }
+
+    return scenario.locations.map(location => ({
+        scenario: scenario.name,
+        description: scenario.description,
+        location
+    }));
+});
+
+function randomizeStartingLocation() {
+    const selected = startingOptions[
+        Math.floor(Math.random() * startingOptions.length)
+    ];
+
+    document.getElementById("starting-scenario").textContent = selected.scenario;
+    document.getElementById("starting-description").textContent = selected.description;
+
+    const locationWrap = document.getElementById("starting-location-wrap");
+    const locationName = document.getElementById("starting-location");
+
+    if (selected.location) {
+        locationName.textContent = selected.location;
+        locationWrap.classList.add("visible");
+    } else {
+        locationName.textContent = "";
+        locationWrap.classList.remove("visible");
+    }
+}
+
+document.getElementById("starting-button")
+    .addEventListener("click", randomizeStartingLocation);
+
+// Comprobación: el listado debe contener exactamente 46 resultados posibles.
+console.assert(startingOptions.length === 46, "Starting Location debe tener 46 opciones.");
