@@ -14,11 +14,13 @@ Crea un personaje único para tu próxima aventura en Tamriel combinando razas, 
 - Posibilidad de volver a generar el personaje individualmente.
 
 ### ⚔️ Rasgos
+### ⚔️ Rasgos
 - Más de 100 rasgos disponibles.
 - Selección de 3 rasgos aleatorios sin repetir.
 - Cada rasgo incluye su nombre original, traducción y descripción.
 - Posibilidad de volver a aleatorizar los rasgos.
 
+### 📜 Historia de Origen
 ### 📜 Historia de Origen
 - 40 historias de origen diferentes.
 - Títulos originales y traducciones al español.
