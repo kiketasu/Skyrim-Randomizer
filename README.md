@@ -54,6 +54,7 @@ Con un solo botón puedes generar una build completa que combina:
 - Raza y sexo.
 - Tres rasgos aleatorios.
 - Una historia de origen.
+- Un lugar de inicio.
 
 ¡Tu próxima aventura nunca será igual!
 
