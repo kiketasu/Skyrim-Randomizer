@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyrim Build Randomizer</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="main-header">
+            <p class="eyebrow">THE ELDER SCROLLS V</p>
+            <h1>SKYRIM</h1>
+            <h2>RANDOMIZADOR DE BUILD</h2>
+            <p class="subtitle">Deja que los Dioses decidan tu destino</p>
+        </header>
+
+        <section class="generator-section">
+
+            <div class="section-heading">
+                
+            </div>
+
+            <div class="generate-container generate-top">
+                <button class="generate-button" id="generate-all">
+                    <span>✧</span>
+                    GENERAR BUILD COMPLETA
+                    <span>✧</span>
+                </button>
+                <p>Crear una nueva aventura</p>
+            </div>
+
+            <div class="cards-grid character-sheet">
+
+                <!-- PERSONAJE: RAZA + SEXO -->
+                <article class="random-card character-card">
+                    <div class="card-header">
+                        <span class="number">01</span>
+                        <h3>PERSONAJE</h3>
+                    </div>
+
+                    <div class="result-image">
+                        <img id="race-image" src="" alt="Retrato del personaje">
+                        <div id="race-placeholder" class="image-placeholder">?</div>
+                    </div>
+
+                    <div class="result-info">
+                        <h4 class="character-name">
+                            <span id="race-name">Sin determinar</span>
+                            <span id="gender-symbol" class="gender-symbol" aria-label="Sexo"></span>
+                        </h4>
+                        <p id="race-description">Tu linaje está por descubrirse...</p>
+                    </div>
+
+                    <button class="random-button" id="race-button">
+                        <span>⟳</span> ALEATORIZAR PERSONAJE
+                    </button>
+                </article>
+
+                <!-- RASGOS -->
+                <article class="random-card traits-panel">
+                    <div class="card-header">
+                        <span class="number">02</span>
+                        <h3>RASGOS</h3>
+                    </div>
+
+                    <p class="traits-intro">Tres rasgos definirán tu forma de jugar</p>
+
+                    <div class="traits-grid" id="traits-grid">
+                        <article class="trait-card empty-trait">
+                            <span class="trait-number">01</span>
+                            <h4>Por descubrir</h4>
+                            <p>Tu primer rasgo está esperando...</p>
+                        </article>
+                        <article class="trait-card empty-trait">
+                            <span class="trait-number">02</span>
+                            <h4>Por descubrir</h4>
+                            <p>Tu segundo rasgo está esperando...</p>
+                        </article>
+                        <article class="trait-card empty-trait">
+                            <span class="trait-number">03</span>
+                            <h4>Por descubrir</h4>
+                            <p>Tu tercer rasgo está esperando...</p>
+                        </article>
+                    </div>
+
+                    <div class="traits-button-container">
+                        <button class="random-button" id="traits-button">
+                            <span>⟳</span> ALEATORIZAR RASGOS
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+
+<!-- ==============================
+     04 · HISTORIA DE ORIGEN
+============================== -->
+
+<section class="origin-section">
+
+    <div class="section-heading">
+        <h3>ORIGIN STORY</h3>
+        <p>Discover the story that will guide your journey</p>
+    </div>
+
+    <article class="origin-card">
+        <div class="origin-image-container">
+            <img id="origin-image" src="" alt="Imagen de la historia de origen">
+            <div id="origin-placeholder" class="image-placeholder">?</div>
+        </div>
+
+        <div class="origin-info">
+            <h4 id="origin-name">Por descubrir</h4>
+            <span id="origin-original" class="origin-original">Tu historia está por escribirse</span>
+            <p id="origin-description">El destino decidirá cómo comienza tu aventura...</p>
+        </div>
+
+        <button class="random-button" id="origin-button">
+            <span>⟳</span> ALEATORIZAR HISTORIA
+        </button>
+    </article>
+
+</section>
+
+        </section>
+
+        <button id="back-to-top" class="back-to-top" aria-label="Volver arriba" title="Volver arriba">
+            ↑
+        </button>
+
+        <footer>
+            <p>SKYRIM BUILD RANDOMIZER · kiketasu</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
