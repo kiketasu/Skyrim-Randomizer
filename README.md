@@ -1,8 +1,6 @@
 # 🐉 Skyrim Build Randomizer
 
-**Deja que los Dioses decidan tu destino.**
-
-Skyrim Build Randomizer es una herramienta interactiva para generar personajes y builds aleatorias inspiradas en *The Elder Scrolls V: Skyrim*.
+Skyrim Build Randomizer es una herramienta interactiva para generar personajes y builds aleatorias en *The Elder Scrolls V: Skyrim* y pensada para utilizarse con la colección de mods *Gate to Sovngarde*.
 
 Crea un personaje único para tu próxima aventura en Tamriel combinando razas, sexos, rasgos y diferentes historias de origen. ¡Cada generación ofrece una nueva forma de jugar!
 
@@ -57,10 +55,18 @@ No necesita instalaciones adicionales ni programas externos para utilizarse desd
 
 Puedes utilizar Skyrim Build Randomizer directamente desde tu navegador una vez publicada la página mediante GitHub Pages.
 
-## 💚 Créditos
+## 💚 Créditos y fuentes
 
-Proyecto personal creado por **kiketasu**.
+Este proyecto es una herramienta de fans creada a partir de contenido e ideas de la comunidad de Skyrim.
 
-Inspirado en el universo de *The Elder Scrolls V: Skyrim*, desarrollado por Bethesda Game Studios.
+Las siguientes fuentes han servido como referencia para desarrollar sus diferentes apartados:
 
-Este proyecto es una herramienta de fans, sin afiliación oficial con Bethesda Softworks.
+- **[Gate to Sovngarde – Traits](https://gatetosovngarde.wiki.gg/wiki/Traits):** fuente de referencia para los rasgos de personaje (*Character Traits*), sus nombres y efectos.
+- **[Nexus Mods – Skyrim Special Edition](https://www.nexusmods.com/skyrimspecialedition/mods/167166):** historias de origen.
+- **[Nexus Mods – Gate to Sovngarde Collection](https://www.nexusmods.com/games/skyrimspecialedition/collections/qdurkx):** colección de mods que sirve como referencia e inspiración para el proyecto y sus historias de origen.
+
+Las traducciones al español, la adaptación de las descripciones, la selección de imágenes y el desarrollo de la herramienta forman parte de este proyecto.
+
+**Creado por kiketasu.**
+
+*Skyrim y The Elder Scrolls son propiedad de Bethesda Softworks. Este proyecto es una creación independiente de fans y no está afiliado ni respaldado oficialmente por Bethesda.*
